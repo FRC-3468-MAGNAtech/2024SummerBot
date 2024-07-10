@@ -1,0 +1,41 @@
+Essentials
+
+Variables:
+	double:				a number like pi (3.1415) 
+	int:				a whole number that can be negative or positive (-1, 1)
+	boolean:			a true or false value
+	string:				some text enclosed by quotes ("Hello World")
+Tip: Simply putting "var" will determine the type for you.
+
+Method Declaration:
+	void:				returns nothing
+	any variable:		returns that type of variable
+Example ("return" is not required for void):
+	void run() {
+		return;
+	}
+	--- or with arguments ---
+	void run(string cat) {
+		cat = "Honk";
+		return;
+	}
+
+Method Calling:
+	To call a method, use its name and parentheses with a semi colon
+		run();
+	If the method has arguments, put them in the parentheses separated by commas
+
+Statements:
+	while (boolean) { }
+	if (boolean) { }
+	"Boolean" here refers to the true or false value
+
+Boolean Operators:
+	||:					or (if this or this is true, then true)
+		if (this || that) { }
+	&&:					and (if this and this are true, then true; otherwise false)
+		if (this && that) { }
+	!=:					not equals (if this is true, then false; otheriwse true)
+		if (cat != 1) { }
+	==:					equals (if this is true, then true; otherwise false)
+		if (cat == 1) { }
