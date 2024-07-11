@@ -16,4 +16,10 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+  public static class ClimbConstants {
+    public static final int SparkMaxID = 0;
+    public static final double ascensionSpeed = 1;
+    public static final double descensionSpeed = -1;
+    public static final double upperLimit = 185;
+  }
 }

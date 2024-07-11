@@ -5,11 +5,15 @@
 package frc.robot.commands.Climb;
 
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.m_Climber;
 
 public class ClimberReturn extends Command {
+  m_Climber climbyDude;
   /** Creates a new ClimberReturn. */
-  public ClimberReturn() {
+  public ClimberReturn(m_Climber m) {
     // Use addRequirements() here to declare subsystem dependencies.
+    addRequirements(m);
+    climbyDude = m;
   }
 
   // Called when the command is initially scheduled.
@@ -18,15 +22,19 @@ public class ClimberReturn extends Command {
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
-  public void execute() {}
+  public void execute() {
+    climbyDude.setDescendSpeed();
+  }
 
   // Called once the command ends or is interrupted.
   @Override
-  public void end(boolean interrupted) {}
+  public void end(boolean interrupted) {
+    climbyDude.stopArms();
+  }
 
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return climbyDude.getLimitSwitch();
   }
 }
