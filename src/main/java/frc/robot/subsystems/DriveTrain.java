@@ -12,11 +12,11 @@ import com.revrobotics.CANSparkLowLevel.MotorType;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class DriveTrainn extends SubsystemBase {
+public class DriveTrain extends SubsystemBase {
   /** Creates a new DriveTrainn. */
 DifferentialDrive m_drivetrain;
 
-  public DriveTrainn() {
+  public DriveTrain() {
     CANSparkMax leftFront = new CANSparkMax(DriveConstants.FrontLeftID, MotorType.kBrushless);
     CANSparkMax leftRear = new CANSparkMax(DriveConstants.BackLeftID, MotorType.kBrushless);
     CANSparkMax rightFront = new CANSparkMax(DriveConstants.FrontRightID, MotorType.kBrushless);
