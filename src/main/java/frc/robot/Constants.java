@@ -18,8 +18,8 @@ public final class Constants {
 
   public static class ShooterConstants
    {
-    public static int ToptMotorPort = 2;
-    public static int bottomMotorPort = 3;
+    public static final int ToptMotorPort = 5;
+    public static final int bottomMotorPort = 4;
     public static final double TopShootMototrSpeed = 0.7;
     public static final double BottomShootMototrSpeed = 0.7;
     public static final double TopIntakeMotorSpeed = -0.5;
@@ -36,10 +36,10 @@ public final class Constants {
   }
 
   public static class DriveConstants {
-    public static final int FrontLeftID = 0;
-    public static final int BackLeftID = 0;
-    public static final int FrontRightID = 0;
-    public static final int BackRightID = 0;
+    public static final int FrontLeftID = 3;
+    public static final int BackLeftID = 6;
+    public static final int FrontRightID = 2;
+    public static final int BackRightID = 7;
     public static final int CurrentLimit = 40;
   }
 }

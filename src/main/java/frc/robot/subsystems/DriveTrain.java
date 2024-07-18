@@ -34,13 +34,14 @@ DifferentialDrive m_drivetrain;
     rightFront.setInverted(false);
 
     m_drivetrain = new DifferentialDrive(leftFront, rightFront);
-
-    
-
   }
 
   public void arcadeDrive(double speed, double rotation){
     m_drivetrain.arcadeDrive(speed, rotation);
+  }
+
+  public void stop(){
+    m_drivetrain.arcadeDrive(0, 0);
   }
 
   @Override
